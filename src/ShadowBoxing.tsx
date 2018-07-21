@@ -2,6 +2,7 @@ import * as React from "react";
 
 export interface IShadowBoxingProps {
     blur?: number
+    children?: any
     color?: string
     level?: number
     opacity?: number
