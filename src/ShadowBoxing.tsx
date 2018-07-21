@@ -8,7 +8,7 @@ export interface IShadowBoxingProps {
     scaleDiagonal?: boolean
     shadowHorizontalOffset?: number
     shadowVerticalOffset?: number
-    style: React.CSSProperties
+    style?: React.CSSProperties
 }
 
 export default class ShadowBoxing extends React.Component<IShadowBoxingProps> {
@@ -17,8 +17,13 @@ export default class ShadowBoxing extends React.Component<IShadowBoxingProps> {
     }
 
     public render() {
+        let style = this.props.style
+        if (style === undefined) {
+            style = {}
+        }
+
         return (
-            <span style={{...this.getShadowStyle(), ...this.props.style}}>
+            <span style={{...this.getShadowStyle(), ...style}}>
                 {this.props.children}
             </span>
         )

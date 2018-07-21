@@ -1,12 +1,13 @@
 {
   "name": "shadowboxing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple package for adding material-design-like shadow effects to React elements.",
   "main": "index.js",
   "files": [
     "index.js",
     "lib",
-    "LICENSE"
+    "LICENSE",
+    "README.md"
   ],
   "types": "./lib/ShadowBoxing.d.ts",
   "scripts": {
