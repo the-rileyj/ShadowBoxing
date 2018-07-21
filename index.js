@@ -1,3 +1,1 @@
-import ShadowBoxing from "./lib/ShadowBoxing";
-
-exports.ShadowBoxing = ShadowBoxing;
+exports.ShadowBoxing = require("./lib/ShadowBoxing").ShadowBoxing;

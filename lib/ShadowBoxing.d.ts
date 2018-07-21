@@ -10,7 +10,7 @@ export interface IShadowBoxingProps {
     shadowVerticalOffset?: number;
     style?: React.CSSProperties;
 }
-export default class ShadowBoxing extends React.Component<IShadowBoxingProps> {
+export declare class ShadowBoxing extends React.Component<IShadowBoxingProps> {
     constructor(props: IShadowBoxingProps);
     render(): JSX.Element;
     private getShadowStyle;

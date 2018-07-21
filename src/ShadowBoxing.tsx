@@ -12,21 +12,23 @@ export interface IShadowBoxingProps {
     style?: React.CSSProperties
 }
 
-export default class ShadowBoxing extends React.Component<IShadowBoxingProps> {
+export class ShadowBoxing extends React.Component<IShadowBoxingProps> {
     public constructor(props: IShadowBoxingProps) {
         super(props);
     }
 
     public render() {
-        let style = this.props.style
-        if (style === undefined) {
-            style = {}
+        let style: React.CSSProperties
+        if (this.props.style === undefined) {
+            style = {display: "inline-block"}
+        } else {
+            style= {display: "inline-block", ...this.props.style}
         }
 
         return (
-            <span style={{...this.getShadowStyle(), ...style}}>
+            <div style={{...this.getShadowStyle(), ...style}}>
                 {this.props.children}
-            </span>
+            </div>
         )
     }
 
