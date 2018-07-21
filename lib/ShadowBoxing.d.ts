@@ -3,6 +3,8 @@ export interface IShadowBoxingProps {
     blur?: number;
     children?: any;
     color?: string;
+    flipHorizontal?: boolean;
+    flipVertical?: boolean;
     level?: number;
     opacity?: number;
     scaleDiagonal?: boolean;
@@ -10,8 +12,9 @@ export interface IShadowBoxingProps {
     shadowVerticalOffset?: number;
     style?: React.CSSProperties;
 }
-export declare class ShadowBoxing extends React.Component<IShadowBoxingProps> {
+declare class ShadowBoxing extends React.Component<IShadowBoxingProps> {
     constructor(props: IShadowBoxingProps);
     render(): JSX.Element;
     private getShadowStyle;
 }
+export default ShadowBoxing;

@@ -1,6 +1,6 @@
 {
   "name": "shadowboxing",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Simple package for adding material-design-like shadow effects to React elements.",
   "main": "index.js",
   "files": [

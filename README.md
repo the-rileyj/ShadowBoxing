@@ -12,12 +12,12 @@ Using the ```ShadowBoxing``` element with only the level attribute specified wil
 
 ```
 import * as ReactDOM from "react-dom"
-import { ShadowBoxing } from "shadowboxing"
+import ShadowBoxing from "shadowboxing"
 
 ReactDOM.render(
   ( 
     <ShadowBoxing level={4}>
-        Cool
+      Cool
     </ShadowBoxing>
   ),
   document.getElementById('root') as HTMLElement
@@ -28,12 +28,12 @@ Alternatively the element can be used as a wrapper to produce desired shadow eff
 
 ```
 import * as ReactDOM from "react-dom"
-import { ShadowBoxing } from "shadowboxing"
+import ShadowBoxing from "shadowboxing"
 
 ReactDOM.render(
   ( 
     <ShadowBoxing shadowHorizontalOffset={4} style={{border: "solid black"}}>
-        Nice
+      Nice
     </ShadowBoxing>
   ),
   document.getElementById('root') as HTMLElement
@@ -46,18 +46,18 @@ If the element you're puting in the ```ShadowBoxing``` element has any sort of b
 
 ```
 import * as ReactDOM from "react-dom"
-import { ShadowBoxing } from "shadowboxing"
+import ShadowBoxing from "shadowboxing"
 
 ReactDOM.render(
   ( 
     <div style={{backgroundColor: "red"}}>
         <ShadowBoxing shadowHorizontalOffset={4} style={{border: "solid black", borderRadius: ".25rem"}}>
-            This
+          This
         </ShadowBoxing>
         <ShadowBoxing shadowHorizontalOffset={4}>
-            <div style={{border: "solid black"}}>
-                Instead of this
-            </div>
+          <div style={{border: "solid black"}}>
+            Instead of this
+          </div>
         </ShadowBoxing>
     </div>
   ),
