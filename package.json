@@ -1,6 +1,6 @@
 {
   "name": "shadowboxing",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Simple package for adding material-design-like shadow effects to React elements.",
   "main": "index.js",
   "files": [
@@ -25,6 +25,10 @@
     "url": "https://github.com/the-rileyj/ShadowBoxing/issues"
   },
   "homepage": "https://github.com/the-rileyj/ShadowBoxing#readme",
+  "peerDependencies": {
+    "react": ">=15.0.1",
+    "react-dom": ">=15.0.1"
+  },
   "devDependencies": {
     "@types/react": "^16.4.6",
     "react": "^16.4.1",
