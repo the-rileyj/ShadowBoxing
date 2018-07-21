@@ -1,0 +1,31 @@
+{
+  "name": "shadowboxing",
+  "version": "1.0.0",
+  "description": "Simple package for adding material-design-like shadow effects to React elements.",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib",
+    "LICENSE"
+  ],
+  "types": "./lib/ShadowBoxing.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-rileyj/ShadowBoxing.git"
+  },
+  "author": "Riley Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-rileyj/ShadowBoxing/issues"
+  },
+  "homepage": "https://github.com/the-rileyj/ShadowBoxing#readme",
+  "devDependencies": {
+    "@types/react": "^16.4.6",
+    "react": "^16.4.1",
+    "typescript": "^2.9.2"
+  }
+}
